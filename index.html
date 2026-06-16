@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Monsieur Dev - Développeur et chercheur en intelligence contextuelle">
+    <meta name="author" content="Monsieur Dev">
+    <title>Monsieur Dev - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="./me.jpg" alt="Monsieur Dev" class="logo-image">
+                <h1 class="logo-text">Monsieur Dev</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#projet" class="nav-link">Projet</a></li>
+                    <li><a href="#commentaire" class="nav-link">Commentaire</a></li>
+                    <li><a href="#album" class="nav-link">Galerie</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="accueil" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Bienvenue</h2>
+                        <p class="hero-description">
+                            Oui, j'ai écrit ce code moi-même... avec du café, de la patience, et parfois un peu de chance. 
+                            Non, je ne dors pas beaucoup, mais au moins ça compile (la plupart du temps 😄)
+                        </p>
+                        <button id="likeBtn" class="btn btn-primary">
+                            <span class="btn-icon">👍</span>
+                            <span class="btn-text">J'aime cette blague</span>
+                        </button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./me3.jpg" alt="Manassé Mwenze" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section class="profile">
+            <div class="container">
+                <div class="profile-card">
+                    <img src="./me2.png" alt="Monsieur Dev" class="profile-avatar">
+                    <div class="profile-info">
+                        <h2 class="profile-name">Manassé Mwenze</h2>
+                        <p class="profile-alias">alias <strong>Monsieur Dev</strong></p>
+                        <p class="profile-title">Développeur & Chercheur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="projet" class="project">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Kerta Word</h2>
+                    <p class="section-subtitle">Projet en phase d'incubation</p>
+                </div>
+                <div class="project-content">
+                    <div class="project-card">
+                        <div class="project-icon">🧠</div>
+                        <h3 class="project-heading">Intelligence Contextuelle</h3>
+                        <p class="project-description">
+                            Une architecture logicielle orientée vers l'intelligence contextuelle et l'assistance adaptative.
+                        </p>
+                    </div>
+                    <div class="project-details">
+                        <p class="project-text">
+                            Le projet Kerta est une initiative de recherche personnelle visant à concevoir une architecture 
+                            logicielle orientée vers l'intelligence contextuelle et l'assistance adaptative. Le système 
+                            explore des mécanismes permettant de comprendre le contexte d'une interaction, de maintenir 
+                            une continuité logique dans les échanges et d'ajuster dynamiquement ses réponses en fonction 
+                            de l'utilisateur et de l'environnement d'exécution.
+                        </p>
+                        <p class="project-text">
+                            L'objectif n'est pas uniquement de répondre à des requêtes, mais d'évoluer vers une logique 
+                            d'assistance plus structurée, capable d'intégrer des informations progressives et de s'adapter 
+                            à différents niveaux d'usage.
+                        </p>
+                        <div class="project-status">
+                            <span class="status-badge">Documentation non publique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments Section -->
+        <section id="commentaire" class="comments">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Commentaires</h2>
+                </div>
+                <div class="comments-container">
+                    <div class="comment-form">
+                        <textarea 
+                            id="commentInput" 
+                            class="comment-textarea" 
+                            placeholder="Écrivez votre commentaire..."
+                            aria-label="Zone de commentaire"
+                        ></textarea>
+                        <button id="submitComment" class="btn btn-secondary">Envoyer le commentaire</button>
+                        <p id="commentSuccess" class="success-message">Commentaire envoyé avec succès !</p>
+                    </div>
+                    <div class="comments-list" id="commentsList">
+                        <div class="comment-item">
+                            <div class="comment-avatar">👤</div>
+                            <div class="comment-content">
+                                <p class="comment-text">Bonjour tout le monde.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="toggleComments" class="btn btn-outline">Voir tous les commentaires</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="album" class="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Galerie</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./me.jpg" alt="Photo 1" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">Photo 1</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./me2.png" alt="Photo 2" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">Photo 2</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./me3.jpg" alt="Photo 3" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">Photo 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3 class="contact-title">WhatsApp</h3>
+                        <p class="contact-number">+243 99 57 72 785</p>
+                        <a href="https://wa.me/243995772785" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                            <span class="btn-icon">💬</span>
+                            Envoyer un message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Monsieur Dev © <span id="year"></span></p>
+                <p class="footer-rights">Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

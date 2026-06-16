@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content container-page-web-element">
+      <div class="header-page-element">
+        <header style="padding: 0">
+          <div
+            style="
+              display: flex;
+              position: sticky;
+              padding: 10px;
+              background-color: white;
+            "
+          >
+            <p
+              style="width: 50px; height: 50px; border-radius: 50%"
+              class="icon"
+            >
+              <img src="./me.jpg" alt="" />
+            </p>
+            <h4>monsieur dev</h4>
+          </div>
+        </header>
+      </div>
+      <br />
+      <div class="theme">
+        <ul>
+          <li><a href="#commentaire">commentaire</a></li>
+          <li><a href="#album">images</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+      <!-- ------------------------------- -->
+      <hr />
+      <div class="theme-2">
+        <div>
+          <h3>Bienvenue</h3>
+          <br />
+          <p>
+            Oui, j'ai écrit ce code moi-meme...avec du café, de la patience, et
+            parfois un peu de chance. Non, je ne dors pas beaucoup, mais au
+            moins ça compile(la plupart du temps 😄)
+            <br /><br />
+            Appuyer sur le bouton '<strong>okay</strong>' si la blague vous a
+            plus !
+          </p>
+          <br />
+          <button style="float: right" class="btn btn-info">OKAY</button>
+        </div>
+        <br />
+        <br />
+        <hr />
+      </div>
+      <br /><br />
+      <div
+        style="
+          padding: 0;
+          text-align: center;
+          background-color: aliceblue;
+          padding: 5%;
+          margin: 5%;
+          border-radius: 10px;
+        "
+      >
+        <img src="./me3.jpg" style="width: 30%; border-radius: 50%" alt="" />
+        <br /><br />
+        <h3>Manassé Mwenze</h3>
+      </div>
+      <p
+        style="text-align: center; text-transform: uppercase; font-weight: bold"
+      >
+        alias
+      </p>
+      <div
+        style="
+          padding: 0;
+          text-align: center;
+          background-color: aliceblue;
+          padding: 5%;
+          margin: 5%;
+          border-radius: 10px;
+        "
+      >
+        <img src="./me2.png" style="width: 30%; border-radius: 50%" alt="" />
+        <br /><br />
+        <h3>Monsieur Dev</h3>
+      </div>
+      <div class="theme-3" style="margin: 10px">
+        <h3>kerta word</h3>
+        <hr />
+        <div>
+          <p>
+            Projet en phase d'incubation <br />Une architecture logicielle
+            orientée vers l'intelligence contextuelle et l'assistance adaptative
+            <br />
+            <strong>Documentation non publique</strong>
+            <br /><br /><br />
+            le projet en phase d'incubation Kerta est une initiative de
+            recherche personnelle visant à concevoir une architecture logicielle
+            orientée vers l'intelligence contextuelle et l'assistance
+            adaptative. Le système explore des mécanismes permettant de
+            comprendre le contexte d'une interaction, de maintenir une
+            continuité logique dans les échanges et d'ajuster dynamiquement ses
+            reponses en fonction de l'utilisateur et de l'environnement
+            d'execution. l'objectif n'est pas uniquement de répondre à des
+            requetes, mais d'évoluer vers une logique d'assistance plus
+            structurée, capable d'intégrer des informations progressives et de
+            s'adapter à differents niveaux d'usage.
+            <br />
+            <strong>Documentation non publique</strong>
+          </p>
+        </div>
+        <br />
+        <hr />
+        <br />
+      </div>
+      <div class="commentaire" id="commentaire" style="width: 90%">
+        <h3 style="margin: 20px"># Commentaire</h3>
+        <textarea
+          name=""
+          id=""
+          style="
+            width: 100%;
+            height: 30vh;
+            margin: 20px;
+            resize: none;
+            padding: 10px;
+            border-radius: 10px;
+          "
+          placeholder="écrire un texte..."
+        ></textarea>
+        <br />
+        <p style="margin: 20px; color: rgb(1, 220, 1)" hidden>Envoyé !</p>
+        <button style="margin: 0 20px" class="btn btn-outline-dark">
+          Envoyer le commentaire
+        </button>
+        <div class="commentaires">
+          <div class="commentaire-user">
+            <p>Bonjour tout le monde.</p>
+          </div>
+        </div>
+        <br />
+        <div style="width: 100%; text-align: center; padding: 10px">
+          <button class="btn btn-outline-success">Voir les commentaires</button>
+        </div>
+      </div>
+      <hr />
+      <div class="album" id="album">
+        <br />
+        <h3 style="margin: 20px"># Images</h3>
+        <br /><br />
+        <div style="display: inline-flex">
+          <img src="./me.jpg" width="50%" alt="" />
+          <img src="./me2.png" width="50%" alt="" />
+        </div>
+      </div>
+      <hr />
+      <br />
+      <div id="contact">
+        <h3 style="margin: 20px"># contact</h3>
+        <br />
+        <div>
+          <ul>
+            <li>Numéro whatsapp:</li>
+            <br />
+            <li>+243 99 57 72 785</li>
+            <br />
+            <li>
+              <a href="#" style="text-decoration: none"
+                ><button class="btn btn-outline-success">
+                  Envoyer directement un message via whatsapp
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <footer style="background-color: #151515; color: white; padding: 20px">
+      Monsieur Dev@ <br />
+      Tout droit reservé.
+      <p id="year"></p>
+    </footer>
+
+    <script>
+      const date = new Date().getFullYear();
+      document.querySelector("#year").textContent = date;
+    </script>
+  </body>
+</html>
